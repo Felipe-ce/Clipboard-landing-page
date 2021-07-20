@@ -8,7 +8,7 @@
 
   /* Cores neutras */
   --cinza-escuro: hsl(210, 10%, 33%);
-  --cinza-claro: hsl(210, 10%, 33%);  --cinza-escuro: hsl(210, 10%, 33%);
+  --cinza-claro:  hsl(201, 11%, 66%);
 
   /* Tipografia */
   --font: 'Bai Jamjuree', sans-serif;
@@ -33,10 +33,15 @@ body{
   color: var(--cinza-escuro);
   font-weight: 600;
 }
+.subtitulo{
+  color: var(--cinza-escuro);
+}
 a{
   text-decoration: none;
 }
-
+li{
+  list-style: none;
+}
 .btn{
   display: block;
   font-weight: 600;
@@ -75,7 +80,113 @@ a{
 .intro .logo{
   margin-bottom: 2rem;
 }
-.intro > p{
+.intro > p, .diferencial p{
   color: var(--cinza-claro);
 }
 
+
+
+/* section Diferenciais */
+.diferencial{
+  padding: 7rem 1rem;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 2.5rem;
+}
+.diferencial-content{
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 3rem;
+}
+/* adicionando mais de um elemento para otimizar o codigo */
+.diferencial-content .subtitulo, .servicos-content .subtitulo{
+  margin-bottom: 1rem;
+}
+
+
+
+/* serviços */
+.servicos{
+  padding: 7rem 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 2.5rem;
+}
+.servicos-content{
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 3rem;
+}
+.servicos-content img{
+  margin: .8rem auto;
+  width: 60px;
+}
+
+
+
+/* clientes */
+.clientes{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 3rem;
+}
+
+
+
+/* download */
+.download{
+  padding: 7rem 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+
+
+/* footer */
+.footer{
+  padding: 2rem 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+  background: hsl(210, 8%, 95%);
+}
+.links-uteis{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
+  gap: 1rem;
+}
+.links-uteis a{
+  color: var(--cinza-escuro);
+  font-size: 1.125rem;
+}
+.redes-sociais{
+  padding: 1rem 3rem;
+  display: flex;
+}
+.redes-sociais a{
+  padding: 1rem;
+}
